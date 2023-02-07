@@ -18,7 +18,13 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex h-[80vh] w-screen items-center justify-center">
         <section>
-          <Image src={"/Waiting.png"} width={300} height={400} alt="loader" />
+          <Image
+            className="cursor-pointer hover:animate-pulse"
+            src={"/Waiting.png"}
+            width={300}
+            height={400}
+            alt="loader"
+          />
         </section>
       </main>
     </>
