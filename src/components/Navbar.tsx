@@ -1,25 +1,28 @@
 export const Navbar = () => {
   return (
-    <nav className="h-[160px] w-screen shadow-md ">
-      <section className="flex h-[112px] w-full border-b border-[#e5e5e5]">
-        <div className="h-full w-[20%] pl-5">
+    <nav className="max-h-[160px]  w-screen shadow-md ">
+      <section className="flex h-14  w-full border-b border-[#e5e5e5] xl:h-[112px]">
+        <div className="flex h-full w-[25%] items-center pl-5 xl:block xl:w-[20%]">
           <img
-            className="h-[110px] w-[230px] cursor-pointer object-contain"
+            className="hidden cursor-pointer object-contain xl:block xl:h-[110px] xl:w-[230px]"
             src="/SubscribeSticker.png"
             alt=""
           />
+          <div className="block hover:cursor-pointer xl:hidden">
+            <Bars3 />
+          </div>
         </div>
-        <div className="flex h-full w-[60%] items-center justify-center">
+        <div className="flex h-14 w-[50%] items-center justify-center  xl:h-full xl:w-[60%]">
           {/* <NewYorkLogo /> */}
           <img
             // w-32 h-8
-            className="h-[70px] w-[300px] cursor-pointer"
+            className="h-8 w-32 cursor-pointer xl:h-[70px] xl:w-[300px]"
             src="https://www.newyorker.com/verso/static/the-new-yorker/assets/logo.f1893bac6dafe13d6d5bad671a5bee2345efa44d.svg"
             alt=""
           />
         </div>
-        <div className="flex h-full w-[20%] items-center justify-center  ">
-          <section className="flex h-8 w-[320px] items-center justify-start gap-x-4 text-[12px] font-semibold">
+        <div className="flex h-full w-[25%] items-center justify-center xl:w-[20%]  ">
+          <section className=" hidden h-8 w-[320px] items-center justify-start gap-x-4 text-[12px] font-semibold xl:flex">
             <div className="cursor-pointer hover:underline">Newsletter</div>
             <div className="cursor-pointer hover:underline">Sign In</div>
             <button className="h-[30px] w-28 rounded-sm bg-[#0787ca] text-white">
@@ -31,7 +34,7 @@ export const Navbar = () => {
           </section>
         </div>
       </section>
-      <section className="flex h-12 w-full ">
+      <section className="hidden xl:flex xl:h-12 xl:w-full ">
         <div className="h-full w-[10%]"></div>
         <div className="flex h-full w-[80%] items-center justify-center">
           <ul className="flex h-4 w-max gap-x-5 text-[12px] font-semibold ">
@@ -112,6 +115,25 @@ const SearchIcon = () => {
         d="M14.5 10a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm5.249 8.335l4.458 4.458-1.414 1.414-4.458-4.458a6.5 6.5 0 1 1 1.414-1.414z"
         fill-rule="nonzero"
       ></path>
+    </svg>
+  );
+};
+
+const Bars3 = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="h-6 w-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+      />
     </svg>
   );
 };

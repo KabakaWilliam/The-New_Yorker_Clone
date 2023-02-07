@@ -25,6 +25,7 @@ const Home: NextPage = () => {
             height={400}
             alt="Working on it image"
             placeholder="blur"
+            blurDataURL="/Waiting.png"
           />
         </section>
       </main>
