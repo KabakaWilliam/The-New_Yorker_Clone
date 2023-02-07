@@ -23,7 +23,8 @@ const Home: NextPage = () => {
             src={"/Waiting.png"}
             width={300}
             height={400}
-            alt="loader"
+            alt="Working on it image"
+            placeholder="blur"
           />
         </section>
       </main>
