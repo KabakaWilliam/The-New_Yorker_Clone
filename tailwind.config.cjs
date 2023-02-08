@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         acp: ["adobe-caslon-pro", "serif"],
+        Didot: ["linotype-didot", "serif"],
+        Graphie: ["graphie", "sans-serif"],
       },
     },
   },

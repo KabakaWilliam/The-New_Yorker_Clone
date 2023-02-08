@@ -1,6 +1,6 @@
 export const Navbar = () => {
   return (
-    <nav className="sticky top-0  max-h-[160px] w-screen bg-white shadow-md">
+    <nav className="sticky top-0 z-40  max-h-[160px] w-screen bg-white shadow-md">
       <section className="flex h-14  w-full border-b border-[#e5e5e5] xl:h-[112px]">
         <div className="flex h-full w-[25%] items-center pl-5 xl:block xl:w-[20%]">
           <img
@@ -17,12 +17,12 @@ export const Navbar = () => {
           <img
             // w-32 h-8
             className="h-8 w-32 cursor-pointer xl:h-[70px] xl:w-[300px]"
-            src="https://www.newyorker.com/verso/static/the-new-yorker/assets/logo.f1893bac6dafe13d6d5bad671a5bee2345efa44d.svg"
+            src="/newYorkerLogo-Black.svg"
             alt=""
           />
         </div>
-        <div className="flex h-full w-[25%] items-center justify-center xl:w-[20%]  ">
-          <section className=" hidden h-8 w-[320px] items-center justify-start gap-x-4 text-[12px] font-semibold xl:flex">
+        <div className="flex h-full w-[25%] items-center justify-center   xl:w-[20%]  ">
+          <section className=" hidden h-8 w-[320px] items-center justify-start gap-x-4 text-[12px] font-semibold  xl:flex">
             <div className="cursor-pointer hover:underline">Newsletter</div>
             <div className="cursor-pointer hover:underline">Sign In</div>
             <button className="h-[30px] w-28 rounded-sm bg-[#0787ca] text-white">
